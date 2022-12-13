@@ -16,3 +16,9 @@ const targetSum = document.getElementById('sum');
 //3. Select Button
 
 const buttonCalculate = document.getElementById('calculate');
+
+//4. Add listener to button
+
+buttonCalculate.addEventListener('click', function(){
+
+});
