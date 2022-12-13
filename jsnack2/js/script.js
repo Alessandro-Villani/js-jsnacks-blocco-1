@@ -23,5 +23,23 @@ const buttonCheck = document.getElementById('check');
 //5. Add listener to button
 buttonCheck.addEventListener('click', function(){
 
+    //5.1 Set flag
+    let isInvited = false;
+
+    //5.2 Store name into variable
+    const userName = inputName.value;
+    console.log(userName);
+
+    //5.3 For every item in the array and until flag is false...
+    for(i = 0; i < invited.length && !isInvited; i++){
+        //5.3.1 Check if input is present
+        if(userName === invited[i]){
+            isInvited = true;
+            console.log(isInvited);
+        }
+        console.log(isInvited);
+    }
+
+    
 });
 
