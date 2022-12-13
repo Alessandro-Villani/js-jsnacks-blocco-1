@@ -40,6 +40,11 @@ buttonCheck.addEventListener('click', function(){
         console.log(isInvited);
     }
 
-    
+//6 Prepare message
+const message = isInvited ? `<p class="bg-success px-3 py-1">Complimenti, sei invitato!</p>` : `<p class="bg-danger px-3 py-1">Sparisci, non ti conosco!</p>`
+
+//7. Print message on page
+targetMessage.innerHTML = message;
+
 });
 
