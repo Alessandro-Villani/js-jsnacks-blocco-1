@@ -4,3 +4,9 @@ Il software deve chiedere per 10 volte all’utente di inserire un numero. (qui 
 
 ----------------------------------------------------------------------------------------*/
 
+//1. Select Targets
+const targetSum = document.getElementById('sum');
+
+//2. Set Array for number storage
+const numbers = [];
+
