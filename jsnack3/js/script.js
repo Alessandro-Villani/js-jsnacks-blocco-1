@@ -12,6 +12,7 @@ const inputNumber = document.getElementById('number');
 //2. Select Target
 
 const targetSum = document.getElementById('sum');
+const targetError = document.getElementById('error')
 
 //3. Select Button
 
@@ -21,32 +22,36 @@ const buttonCalculate = document.getElementById('calculate');
 
 buttonCalculate.addEventListener('click', function(){
 
-    //4.1 Acquire input value
+    //4.1 Reset error message
+    targetError.innerText = '';
+
+    //4.2 Acquire input value
     const number = inputNumber.value;
     console.log(number);
     console.log (number.toString().length);
 
-    //4.2 Validation
+    //4.3 Validation
     if (isNaN(number) || number.toString().length != 4){
+        targetError.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> <b>Deve essere un numero con 4 cifre </b>'
         return
     }
 
-    //4.3 Store the digits of number into an array
+    //4.4 Store the digits of number into an array
     const numberDigits = [...number];
     console.table(numberDigits);
 
-    //4.4 Initialize sum variable
+    //4.5 Initialize sum variable
     let sum = 0
     console.log(sum);
 
-    //4.5 Sum the digits
+    //4.6 Sum the digits
     for(i = 0; i < numberDigits.length; i++){
         sum += parseInt(numberDigits[i]);
         console.log(sum);
     }
 
-    //4.6 Print in page
-    
+    //4.7 Print in page
+    targetSum.innerText = "la somma dei numeri è: " + sum;
     
 
 });
