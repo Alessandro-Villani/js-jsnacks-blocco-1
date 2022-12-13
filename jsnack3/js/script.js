@@ -12,3 +12,7 @@ const inputNumber = document.getElementById('number');
 //2. Select Target
 
 const targetSum = document.getElementById('sum');
+
+//3. Select Button
+
+const buttonCalculate = document.getElementById('calculate');
