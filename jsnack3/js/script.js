@@ -21,4 +21,18 @@ const buttonCalculate = document.getElementById('calculate');
 
 buttonCalculate.addEventListener('click', function(){
 
+    //4.1 Acquire input value
+    const number = inputNumber.value;
+    console.log(number);
+    console.log (number.toString().length);
+
+    //4.2 Validation
+    if (isNaN(number) || number.toString().length != 4){
+        return
+    }
+
+    //4.3 Store the digits of number into an array
+    const numberDigits = [...number];
+    console.table(numberDigits);
+
 });
