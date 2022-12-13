@@ -35,4 +35,18 @@ buttonCalculate.addEventListener('click', function(){
     const numberDigits = [...number];
     console.table(numberDigits);
 
+    //4.4 Initialize sum variable
+    let sum = 0
+    console.log(sum);
+
+    //4.5 Sum the digits
+    for(i = 0; i < numberDigits.length; i++){
+        sum += parseInt(numberDigits[i]);
+        console.log(sum);
+    }
+
+    //4.6 Print in page
+    
+    
+
 });
