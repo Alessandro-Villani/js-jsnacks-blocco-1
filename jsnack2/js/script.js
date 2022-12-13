@@ -16,4 +16,12 @@ const inputName = document.getElementById('name');
 
 const targetMessage = document.getElementById('message');
 
+//4. Select button
+
+const buttonCheck = document.getElementById('check');
+
+//5. Add listener to button
+buttonCheck.addEventListener('click', function(){
+
+});
 
