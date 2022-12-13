@@ -5,7 +5,6 @@ Il software deve chiedere per 10 volte all’utente di inserire un numero. (qui 
 ----------------------------------------------------------------------------------------*/
 
 //1. Select Targets
-const targetAddends = document.getElementById('addends');
 const targetSum = document.getElementById('sum');
 
 //2. Set Array for number storage
@@ -40,12 +39,10 @@ for(i=0; i < numbers.length; i++){
     console.log(sum);
     addends += i < numbers.length - 1 ? `${numbers[i]} + ` : `${numbers[i]} =`;
     console.log(addends);
-    console.log(addends.type);
+    console.log(typeof addends);
 
 }
 
 //6. Print sum on page
 
-targetAddends.innerText = addends;
-console.log(addends);
-targetSum.innerText = 'La somma dei numeri inseriti è: ' + sum;
+targetSum.innerText = 'La somma dei numeri inseriti è: ' + addends + sum;
