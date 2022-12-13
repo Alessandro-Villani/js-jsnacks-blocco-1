@@ -26,3 +26,14 @@ for(i = 0; numbers.length < 10; i++){
         console.table(numbers);
     }
 }
+
+//4. Initialize sum variable
+
+let sum = 0;
+
+//5. Sum every element stored into Array in sum variable
+
+for(i=0; i < numbers.length; i++){
+    sum += numbers[i];
+    console.log(sum);
+}
