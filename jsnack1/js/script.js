@@ -37,3 +37,7 @@ for(i=0; i < numbers.length; i++){
     sum += numbers[i];
     console.log(sum);
 }
+
+//6. Print sum on page
+
+targetSum.innerText = 'La somma dei numeri inseriti è: ' + sum;
