@@ -22,8 +22,9 @@ const buttonCalculate = document.getElementById('calculate');
 
 buttonCalculate.addEventListener('click', function(){
 
-    //4.1 Reset error message
+    //4.1 Reset messages
     targetError.innerText = '';
+    targetSum.innerText = '';
 
     //4.2 Acquire input value
     const number = inputNumber.value;
